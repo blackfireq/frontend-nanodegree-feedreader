@@ -48,6 +48,12 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
 
 ## Notes on running these tests
+
+To run this code you must perform these steps
+1. html file - add the 'feedreader.js' from the spec folder under jasmine after your js code you want to tests
+
+
+Explanation of testing suites
 1. 'RSS feeds' suite
   a) 'are defined' checks that the feeds is populated.
   b) 'Url is not empty' checks that the url of those feeds is defined.

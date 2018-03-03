@@ -22,8 +22,7 @@ $(function() {
          * page?
          */
         it('are defined', function() {
-            expect(allFeeds).toBeDefined();
-            expect(allFeeds.length).not.toBe(0);
+            expect(allFeeds).toBeTruthy();
         });
 
 
@@ -33,8 +32,7 @@ $(function() {
          */
         it('Url is not empty', function() {
           allFeeds.forEach(function(feed) {
-            expect(feed.url).toBeDefined();
-            expect(feed.url.length).not.toBe(0);
+            expect(feed.url).toBeTruthy();
           });
         });
 
@@ -45,8 +43,7 @@ $(function() {
          */
         it('Name is not empty', function() {
           allFeeds.forEach(function(feed) {
-            expect(feed.name).toBeDefined();
-            expect(feed.name.length).not.toBe(0);
+            expect(feed.name).toBeTruthy();
           });
         });
     });
@@ -71,16 +68,13 @@ $(function() {
         * should have two expectations: does the menu display when
         * clicked and does it hide when clicked again.
         */
-        it('menu changes to visible', function() {
+        it('menu changes visiblity', function() {
           $(menuIcon).trigger('click');
           expect($(menu).hasClass('menu-hidden')).toBe(false);
-        });
 
-        it('menu changes hidden', function() {
           $(menuIcon).trigger('click');
           expect($(menu).hasClass('menu-hidden')).toBe(true);
         });
-
     });
     /* TODO: Write a new test suite named "Initial Entries" */
     describe('Initial Entries', function(){
@@ -95,7 +89,7 @@ $(function() {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
          it('Check the feed', function(){
-           expect($('.feed .entry').html()).not.toBe(0);
+           expect($('.feed .entry').size()).not.toBe(0);
          });
 
     /* TODO: Write a new test suite named "New Feed Selection" */
@@ -110,6 +104,7 @@ $(function() {
             loadFeed(0, function(){
               feedTest = $('.feed').html();
             });
+            done();
             loadFeed(1);
             done();
           });
