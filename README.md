@@ -44,5 +44,18 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 17. No test should be dependent on the results of another.
 18. Callbacks should be used to ensure that feeds are loaded before they are tested.
 19. Implement error handling for undefined variables and out-of-bound array access.
-20. When complete - all of your tests should pass. 
+20. When complete - all of your tests should pass.
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
+
+## Notes on running these tests
+1. 'RSS feeds' suite
+  a) 'are defined' checks that the feeds is populated.
+  b) 'Url is not empty' checks that the url of those feeds is defined.
+  c) 'Name is not empty' loops through the feel elements and makes sure they are defined
+2. 'The menu' suite
+  a) 'element is hidden' checks that the menu is hidden on initially
+  b) 'menu changes to visible' checks the visibility changes visible when menu icon is clicked
+  c) 'menu changes hidden' checks the visibility changes hidden when menu icon is clicked
+3. 'Initial Entries' suite
+  a) 'Check the feed' checks that the feed has entries in it
+  b) 'New Feed Selection' checks that the new feed doesn't match the previous feed content
