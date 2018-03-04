@@ -22,7 +22,7 @@ $(function() {
        * page?
        */
       it('are defined', function() {
-          expect(allFeeds).toBeTruthy();
+          expect(allFeeds).toBeDefined();
       });
 
 
@@ -32,7 +32,7 @@ $(function() {
        */
       it('Url is not empty', function() {
         allFeeds.forEach(function(feed) {
-          expect(feed.url).toBeTruthy();
+          expect(feed.url).toBeDefined();
         });
       });
 
@@ -43,7 +43,7 @@ $(function() {
        */
       it('Name is not empty', function() {
         allFeeds.forEach(function(feed) {
-          expect(feed.name).toBeTruthy();
+          expect(feed.name).toBeDefined();
         });
       });
   });
@@ -80,7 +80,7 @@ $(function() {
     let entrySize;
     beforeEach(function(done){
       loadFeed(0, function(){
-        entrySize = $('.entry').size();
+        entrySize = $('.feed .entry').length;
         done();
       });
     });
