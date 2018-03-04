@@ -2,7 +2,7 @@
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
 
-You can download it from the github address above and add it to your project folder's root directory. Add your test code in the spec folder under the Jasmine folder.
+You can download it from the github address above and add it to your project folder's root directory. Add your test code in the spec folder under the Jasmine folder. To run it you must use a local web server. you can use xampp or a chrome extension.
 
 
 ## Why this Project?
