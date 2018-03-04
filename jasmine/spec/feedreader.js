@@ -22,7 +22,7 @@ $(function() {
        * page?
        */
       it('are defined', function() {
-          expect(allFeeds).toBeDefined();
+          expect(allFeeds).toBeTruthy();
       });
 
 
@@ -32,7 +32,7 @@ $(function() {
        */
       it('Url is not empty', function() {
         allFeeds.forEach(function(feed) {
-          expect(feed.url).toBeDefined();
+          expect(feed.url).toBeTruthy();
         });
       });
 
@@ -43,7 +43,7 @@ $(function() {
        */
       it('Name is not empty', function() {
         allFeeds.forEach(function(feed) {
-          expect(feed.name).toBeDefined();
+          expect(feed.name).toBeTruthy();
         });
       });
   });
